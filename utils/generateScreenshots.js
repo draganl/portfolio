@@ -38,13 +38,13 @@ async function createScreenshots() {
         // Determine the filename based on the project title
         let fileName = `${projectTitle.replace(/\s+/g, "-").toLowerCase()}-${
           size.width
-        }x${size.height}.png`;
+        }x${size.height}.png`; // Change back to .png
 
         // Special case for filenames that need "title" in them
         if (projectTitle.toLowerCase() === "simple test title") {
-          fileName = `simple-test-title-${size.width}x${size.height}.png`;
+          fileName = `simple-test-title-${size.width}x${size.height}.png`; // Change back to .png
         } else if (projectTitle.toLowerCase() === "test blog title") {
-          fileName = `test-blog-title-${size.width}x${size.height}.png`;
+          fileName = `test-blog-title-${size.width}x${size.height}.png`; // Change back to .png
         }
 
         const fileScreenshotPath = path.join(screenshotsDir, fileName);
@@ -57,7 +57,7 @@ async function createScreenshots() {
 
         const screenshot = await generateScreenshot(projectLink, size);
         await sharp(screenshot)
-          .toFormat("png", { quality: 80 }) // Optimize the image
+          .toFormat("png", { quality: 80 }) // Change back to PNG
           .toFile(fileScreenshotPath);
         console.log(`Screenshot saved: ${fileScreenshotPath}`);
 
@@ -69,7 +69,7 @@ async function createScreenshots() {
         );
         await sharp(fileScreenshotPath)
           .resize(600) // Resize to 600px width
-          .toFormat("png", { quality: 80 }) // Optimize the small image
+          .toFormat("png", { quality: 80 }) // Change back to PNG
           .toFile(smallFileScreenshotPath);
         console.log(`Small screenshot saved: ${smallFileScreenshotPath}`);
 
@@ -90,7 +90,6 @@ function updateMarkdownFile(filePath, thumbnailPath, imagePath) {
   const { data, content } = matter(fileContent);
 
   // Update front matter with relative paths
-  const fileName = path.basename(filePath, ".md"); // Get the markdown file name without extension
   const relativeThumbnailPath = `../assets/screenshots/${path.basename(
     thumbnailPath
   )}`;
