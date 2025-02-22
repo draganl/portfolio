@@ -1,0 +1,14 @@
+---
+title: Poreština.info - novosti iz Poreča i okolice, Vrsara, Funtane, Višnjana, Vižinade, Lovreča, Kaštelira, Tara
+category: Wordpress
+link: 'https://porestina.info/'
+technologies:
+  - Tailwind CSS
+  - bootstrap
+  - jquery
+-e 
+  - HTML5
+  - CSS3
+slug: porestina
+description: Poreština - News portal Poreča i okolice. O svakodnevnici, gospodarstvu, sportu, politici. Iz Poreča, Višnjana, Tara , Vabrige, Kaštelira Funtane, Vrsara, Lovreča
+---
