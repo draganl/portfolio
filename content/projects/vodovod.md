@@ -4,8 +4,7 @@ category: NuxtJS
 link: 'https://vodovod.com/'
 technologies:
   - Tailwind CSS
-  - axios
--e 
+  - NuxtJS
   - HTML5
   - CSS3
 slug: vodovod

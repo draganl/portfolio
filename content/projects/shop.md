@@ -1,14 +1,12 @@
 ---
-title: Naslovna | NK Osijek Shop
+title: NK Osijek Shop
 category: NuxtJS
 link: 'https://shop.nk-osijek.hr/'
 technologies:
-
   - Tailwind CSS
-  - axios
--e 
+  - NuxtJS
   - HTML5
   - CSS3
-slug: shop
+slug: nk-osijek
 description: null
 ---

@@ -3,10 +3,8 @@ title: ReportGorilla - Automated survey reporting, assessments &amp; diagnostics
 category: Magento
 link: 'https://www.reportgorilla.com/'
 technologies:
-
-  - Tailwind CSS
+  - Magento
   - jquery
--e 
   - HTML5
   - CSS3
 slug: reportgorilla

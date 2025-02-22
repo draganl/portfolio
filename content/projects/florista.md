@@ -3,8 +3,7 @@ title:
 category: NuxtJS
 link: 'https://florista.hr'
 technologies:
-
--e 
+  - NuxtJS
   - HTML5
   - CSS3
 slug: florista

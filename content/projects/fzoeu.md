@@ -1,10 +1,9 @@
 ---
-title: 301 Moved Permanently
+title: Fond za zaštitu okoliša i energetsku učinkovitost
 category: NuxtJS
 link: 'http://fzoeu.hr/'
 technologies:
-
--e 
+  - NuxtJS
   - HTML5
   - CSS3
 slug: fzoeu

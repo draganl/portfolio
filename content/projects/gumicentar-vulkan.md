@@ -1,15 +1,10 @@
 ---
-title: Gumicentar Vulkan Osijek - Home page
+title: Gumicentar Vulkan Osijek
 category: NuxtJS
 link: 'https://gumicentar-vulkan.hr/'
 technologies:
-
   - Tailwind CSS
-  - angular
-  - axios
-  - bootstrap
-  - react
--e 
+  - NuxtJS
   - HTML5
   - CSS3
 slug: gumicentar-vulkan

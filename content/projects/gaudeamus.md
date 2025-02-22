@@ -1,14 +1,12 @@
 ---
-title: Home page | Gaudeamus web
+title: Gaudeamus web
 category: NuxtJS
 link: 'https://gaudeamus.hr/'
 technologies:
-
   - Tailwind CSS
-  - axios
--e 
+  - NuxtJS
   - HTML5
   - CSS3
 slug: gaudeamus
-description: null
+description: Prva privatna srednja škola u Osijeku s pravom javnostiPrva privatna srednja škola u Osijeku s pravom javnosti
 ---

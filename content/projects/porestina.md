@@ -3,10 +3,9 @@ title: Poreština.info - novosti iz Poreča i okolice, Vrsara, Funtane, Višnjan
 category: Wordpress
 link: 'https://porestina.info/'
 technologies:
-  - Tailwind CSS
   - bootstrap
   - jquery
--e 
+  - Wordpress
   - HTML5
   - CSS3
 slug: porestina

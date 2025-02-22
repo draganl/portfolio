@@ -1,10 +1,10 @@
 ---
-title: 
+title: Nuttea 
 category: NuxtJS
 link: 'https://takslatko.com'
 technologies:
-
--e 
+  - NuxtJS
+  - Tailwind CSS
   - HTML5
   - CSS3
 slug: takslatko

@@ -1,11 +1,10 @@
 ---
-title: Početna - Prehrana
+title: Prehrana
 category: NuxtJS
 link: 'https://www.prehrana.net/'
 technologies:
   - Tailwind CSS
-  - jquery
--e 
+  - NuxtJS
   - HTML5
   - CSS3
 slug: prehrana

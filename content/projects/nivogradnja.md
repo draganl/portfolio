@@ -3,10 +3,8 @@ title: Nivogradnja
 category: Wordpress
 link: 'https://www.nivogradnja.hr/'
 technologies:
-  - Tailwind CSS
   - WordPress
   - jquery
--e 
   - HTML5
   - CSS3
 slug: nivogradnja

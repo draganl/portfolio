@@ -1,14 +1,12 @@
 ---
-title: Početna | Kalbau
+title: Kalbau
 category: NuxtJS
 link: 'https://kalbau.hr/'
 technologies:
-
   - Tailwind CSS
-  - axios
--e 
+  - NuxtJS
   - HTML5
   - CSS3
 slug: kalbau
-description: null
+description: Kalbau je proizvođač visokokvalietnih aluminijskih krovnih i fasadnih profila. Uz partnerstvo s njemačkom tvrtkom i izvođačem krovnih i fasadnih sistema, Kalzip.
 ---
