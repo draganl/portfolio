@@ -3,7 +3,10 @@
 import puppeteer from "puppeteer";
 
 export async function generateScreenshot(url, size) {
-  const browser = await puppeteer.launch();
+  // const browser = await puppeteer.launch();
+   const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
 
   // Set viewport size based on the provided size

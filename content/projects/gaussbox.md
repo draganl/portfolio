@@ -9,4 +9,7 @@ technologies:
   - CSS3
 slug: gaussbox
 description: null
+thumbnail: ../assets/screenshots/gaussbox-600x338.png
+image: ../assets/screenshots/gaussbox-1200x675.png
 ---
+

@@ -10,4 +10,7 @@ technologies:
   - CSS3
 slug: klasje
 description: null
+thumbnail: ../assets/screenshots/klasje-600x338.png
+image: ../assets/screenshots/klasje-1200x675.png
 ---
+

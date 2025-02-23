@@ -10,4 +10,7 @@ technologies:
   - CSS3
 slug: apartments-capic
 description: null
+thumbnail: ../assets/screenshots/apartments-capic-600x338.png
+image: ../assets/screenshots/apartments-capic-1200x675.png
 ---
+

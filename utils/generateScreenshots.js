@@ -27,7 +27,7 @@ async function createScreenshots() {
       const { data } = matter(fileContent); // Parse front matter
 
       const projectLink = data.link; // Extract the link from front matter
-      const projectTitle = data.title; // Extract the title for naming screenshots
+      const projectTitle = data.slug; // Extract the title for naming screenshots
 
       // Define sizes for screenshots (only 1200px now)
       const sizes = [

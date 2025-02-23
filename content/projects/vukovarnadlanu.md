@@ -10,4 +10,7 @@ technologies:
   - CSS3
 slug: vukovarnadlanu
 description: null
+thumbnail: ../assets/screenshots/vukovarnadlanu-600x338.png
+image: ../assets/screenshots/vukovarnadlanu-1200x675.png
 ---
+

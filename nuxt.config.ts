@@ -3,15 +3,19 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/tailwindcss', // Ensure this line is included
   ],
-  css: [
-  '/Users/dragan/portfolio/assets/css/main.css',
-],
   devtools: { enabled: true },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+    app: {
+    head: {
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap' }
+      ]
+    }
   },
   future: {
     compatibilityVersion: 4,

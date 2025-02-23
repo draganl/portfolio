@@ -1,14 +1,21 @@
 <template>
-  <div class="min-h-screen bg-gray-900">
+  <div class="font-body min-h-screen bg-gray-900">
     <!-- Hero Section -->
     <section
-      class="hero bg-gray-800 py-20 flex flex-col md:flex-row items-center justify-between"
+      class="hero bg-black flex items-center justify-center h-screen relative overflow-hidden"
     >
-      <div class="text-center md:text-left md:w-1/2">
-        <h1 class="text-primary font-bold text-5xl mb-4 animate-fade-in-down">
+      <div class="absolute inset-0 z-0 opacity-10 h-full w-full">
+        <img
+          src="/frontend.jpeg"
+          alt="Frontend Developer"
+          class="w-full h-auto object-cover"
+        />
+      </div>
+      <div class="text-center relative z-10">
+        <h1 class="font-heading font-bold text-5xl text-secondary mb-4 animate-fade-in-down">
           Welcome to My Portfolio
         </h1>
-        <p class="text-lg text-secondary mb-8">
+        <p class="text-lg text-primary mb-8">
           I am a Frontend Developer specializing in modern web applications.
         </p>
         <button
@@ -18,17 +25,10 @@
           View My Work
         </button>
       </div>
-      <div class="md:w-1/2 mt-8 md:mt-0">
-        <img
-          src="/frontend.jpeg"
-          alt="Frontend Developer"
-          class="w-full h-auto object-cover"
-        />
-      </div>
     </section>
 
     <!-- Category Filter -->
-    <div class="mb-8 text-center">
+    <div class="filter my-8 text-center">
       <button
         v-for="category in categories"
         :key="category"
@@ -39,7 +39,7 @@
       </button>
     </div>
 
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="max-w-7xl py-20 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Portfolio Item -->
       <div
         v-for="(item, index) in filteredPosts"
@@ -48,7 +48,7 @@
         :style="{ 'transition-delay': `${index * 50}ms` }"
       >
         <!-- Image Container -->
-        <div v-if="item.meta?.thumbnail" class="relative h-64 overflow-hidden">
+        <div v-if="item.meta?.thumbnail" class="relative h-96  overflow-hidden">
           <img
             :src="item.meta?.thumbnail"
             :alt="item.title"
@@ -61,7 +61,7 @@
 
         <!-- Content -->
         <div class="p-6">
-          <h3 class="text-2xl font-bold text-text mb-2">
+          <h3 class="text-2xl font-heading text-text mb-2">
             {{ item.title }}
           </h3>
 
@@ -78,8 +78,8 @@
           </ul>
 
           <!-- Link -->
-          <a
-            :href="item.link"
+          <nuxt-link
+            :to="item.meta.link"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center text-primary hover:text-highlight transition-colors duration-300"
@@ -98,7 +98,7 @@
                 d="M14 5l7 7m0 0l-7 7m7-7H3"
               />
             </svg>
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -134,7 +134,7 @@ function filterProjects(category) {
 
 // Scroll to portfolio section
 function scrollToPortfolio() {
-  const portfolioSection = document.querySelector(".max-w-7xl");
+  const portfolioSection = document.querySelector(".filter");
   if (portfolioSection) {
     portfolioSection.scrollIntoView({ behavior: "smooth" });
   }

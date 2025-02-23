@@ -8,4 +8,7 @@ technologies:
   - CSS3
 slug: fzoeu
 description: null
+thumbnail: ../assets/screenshots/fzoeu-600x338.png
+image: ../assets/screenshots/fzoeu-1200x675.png
 ---
+
