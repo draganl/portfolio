@@ -109,13 +109,14 @@ import { ref, computed } from "vue";
 const { data: posts } = await useAsyncData("projects", () =>
   queryCollection("projects").all()
 );
-
+console.log(posts)
 // Extract unique categories
 const categories = ref([
   "All",
   ...(posts.value ? [...new Set(posts.value.map((post) => post.meta.category).filter(Boolean))] : []), // Safe check for posts.value
 ]);
 
+console.log(categories)
 const selectedCategory = ref("All");
 
 const filteredPosts = computed(() => {
