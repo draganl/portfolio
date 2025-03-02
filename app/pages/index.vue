@@ -109,12 +109,11 @@ import { ref, computed } from "vue";
 const { data: posts } = await useAsyncData("projects", () =>
   queryCollection("projects").all()
 );
-console.log(posts.value); // Log the posts to see their structure
 
 // Extract unique categories
 const categories = ref([
   "All",
-  ...new Set(posts.value.map((post) => post.meta.category).filter(Boolean)), // Filter out undefined categories
+  ...(posts.value ? [...new Set(posts.value.map((post) => post.meta.category).filter(Boolean))] : []), // Safe check for posts.value
 ]);
 
 const selectedCategory = ref("All");
