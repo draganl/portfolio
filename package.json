@@ -2,10 +2,9 @@
   "name": "nuxt-content-starter",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.15.5",
   "scripts": {
-    "build": "nuxt build && node utils/generateScreenshots.js",
-    "dev": "nuxt dev && node utils/generateScreenshots.js",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },

@@ -17,6 +17,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+  nitro: {
+    preset: 'netlify'
+  },
   future: {
     compatibilityVersion: 4,
   },
