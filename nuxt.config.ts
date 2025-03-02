@@ -20,6 +20,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'netlify'
   },
+    ssr: true,
   future: {
     compatibilityVersion: 4,
   },
