@@ -1,0 +1,1 @@
+export { handler } from './.netlify/functions-internal/server/server.mjs'

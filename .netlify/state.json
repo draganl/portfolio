@@ -1,0 +1,21 @@
+{
+	"siteId": "5a27b729-36c8-431e-867c-3df3f3190920",
+	"geolocation": {
+		"data": {
+			"city": "Zagreb",
+			"country": {
+				"code": "HR",
+				"name": "Croatia"
+			},
+			"subdivision": {
+				"code": "21",
+				"name": "City of Zagreb"
+			},
+			"timezone": "Europe/Zagreb",
+			"latitude": 45.8293,
+			"longitude": 15.9793,
+			"postalCode": "10000"
+		},
+		"timestamp": 1740942052057
+	}
+}

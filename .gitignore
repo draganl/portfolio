@@ -4,7 +4,7 @@
 .nuxt
 .nitro
 .cache
-dist
+# dist
 
 # Node dependencies
 node_modules
@@ -25,4 +25,4 @@ logs
 
 pnpm-lock.yaml
 # Local Netlify folder
-.netlify
+# .netlify
